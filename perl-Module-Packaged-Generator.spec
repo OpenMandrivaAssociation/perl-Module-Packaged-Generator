@@ -34,6 +34,7 @@ BuildRequires: perl(Parse::CPAN::Packages::Fast)
 BuildRequires: perl(Term::ProgressBar::Quiet)
 BuildRequires: perl(Test::MockObject)
 BuildRequires: perl(Test::More) >= 0.880.0
+BuildRequires: perl(namespace::autoclean)
 BuildArch:  noarch
 
 %description
