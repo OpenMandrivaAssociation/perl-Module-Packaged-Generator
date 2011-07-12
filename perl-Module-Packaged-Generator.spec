@@ -1,5 +1,5 @@
 %define upstream_name    Module-Packaged-Generator
-%define upstream_version 1.111890
+%define upstream_version 1.111930
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
