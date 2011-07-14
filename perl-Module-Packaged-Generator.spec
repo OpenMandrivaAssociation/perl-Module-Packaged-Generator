@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Role to provide easy url fetching
 License:    GPL+ or Artistic
@@ -16,6 +16,7 @@ BuildRequires: perl(Devel::Platform::Info::Linux)
 BuildRequires: perl(Exporter::Lite)
 BuildRequires: perl(File::Copy)
 BuildRequires: perl(File::Find)
+BuildRequires: perl(File::HomeDir) >= 0.970.0
 BuildRequires: perl(File::HomeDir::PathClass)
 BuildRequires: perl(File::Spec::Functions)
 BuildRequires: perl(File::Temp)
@@ -65,5 +66,5 @@ rm -rf %buildroot
 %doc Changes LICENSE META.json META.yml README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/bin/pkgcpan
-/usr/share/man/man1/pkgcpan.1.xz
+%_bindir/pkgcpan
+%_datadir/man/man1/pkgcpan.1.*
