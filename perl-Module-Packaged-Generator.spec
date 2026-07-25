@@ -2,14 +2,14 @@
 %define upstream_version 1.111930
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Role to provide easy url fetching
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/jquelin/module-packaged-generator
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Module-Packaged-Generator-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DBI)
