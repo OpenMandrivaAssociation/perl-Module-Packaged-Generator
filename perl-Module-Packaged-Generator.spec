@@ -1,15 +1,13 @@
 %define upstream_name    Module-Packaged-Generator
-%define upstream_version 1.111930
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.111930
+Release:	7
 
 Summary:	Role to provide easy url fetching
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/jquelin/module-packaged-generator
-Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Module-Packaged-Generator-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Module-Packaged-Generator-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DBI)
@@ -49,7 +47,7 @@ database for the current distribution. But that's not our job to do crazy
 manipulation with this data, we just provide the data :-)
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
